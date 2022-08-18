@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li *ngFor="let currentAthlete of athleteArray">
+      <span *ngIf="currentAthlete.isActive">* {{currentAthlete.name}} ({{currentAthlete.sport}}) is active</span>
+      <span *ngIf="!currentAthlete.isActive">* {{currentAthlete.name}} ({{currentAthlete.sport}}) is not active</span>
+    </li>
+  </ul>
+</div>
