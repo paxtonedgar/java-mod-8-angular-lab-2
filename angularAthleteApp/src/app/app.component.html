@@ -1,3 +1,10 @@
+Enter athlete<input type="text" [(ngModel)]="newName" />
+Enter sport<input type="text" [(ngModel)]="newSport" />
+Are they playing<input type="checkbox" [(ngModel)]="newIsActive" />
+<div>
+  <button (click) = "createAthlete()">add Athlete</button>
+</div>
+
 <div>
   <ul>
     <li *ngFor="let currentAthlete of athleteArray">
